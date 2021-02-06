@@ -1,2 +1,3 @@
 streamlit
-ludwig
+sklearn
+sentence_transformers
