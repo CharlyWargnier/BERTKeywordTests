@@ -66,7 +66,7 @@ candidate_embeddings = model.encode(candidates)
 
 from sklearn.metrics.pairwise import cosine_similarity
 
-top_n = 10
+top_n = 5
 distances = cosine_similarity(doc_embedding, candidate_embeddings)
 keywords = [candidates[index] for index in distances.argsort()[0][-top_n:]]
 
